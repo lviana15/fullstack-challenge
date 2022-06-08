@@ -94,7 +94,7 @@ export default function Home({ loggedInUser }) {
    const [data, setData] = useState([])
 
    async function getData() {
-      const res = await axios.get(`${import.meta.env.VITE_API_HOST}tweets`, {
+      const res = await axios.get(`${import.meta.env.VITE_API_HOST}/tweets`, {
          headers: {
             'authorization': `Bearer ${token}`,
          }
