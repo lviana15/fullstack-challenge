@@ -8,7 +8,7 @@ export default function App() {
    const [user,setUser] = useState();
    
    if (user) {
-      return <Home />
+      return <Home loggedInUser={user} />
    }
 
    return window.location.pathname ==='/signup'
